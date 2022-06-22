@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "866768623503",
+    "project_id": "final-app-2baa7",
+    "storage_bucket": "final-app-2baa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866768623503:android:d0f01e12d12ad3d2aa9dfa",
+        "android_client_info": {
+          "package_name": "com.drtveladze.finalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866768623503-b9suvr2bqt8le6a1t63mhde1kfrs4o49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf3P_mmsDdZFTlntZtGbVpeSz76eqE9Tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866768623503-b9suvr2bqt8le6a1t63mhde1kfrs4o49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

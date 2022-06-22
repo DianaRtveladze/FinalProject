@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FDACCB3">
+
+    <TextView
+        android:layout_width="342dp"
+        android:layout_height="128dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Shop"
+        android:textColor="#145952"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="224dp"
+        android:background="@color/white"
+        android:backgroundTintMode="add"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:backgroundTint="#3F51B5"
+        android:backgroundTintMode="screen"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_lock_icon"
+        app:layout_constraintTop_toBottomOf="@id/emailET"
+        tools:layout_editor_absoluteX="53dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="306dp"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F47236"
+        android:text="@string/log_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

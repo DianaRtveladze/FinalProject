@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FDACCB3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="342dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Shop"
+        android:textColor="#145952"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailET"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="192dp"
+        android:background="@color/white"
+        android:backgroundTint="#3F51B5"
+        android:backgroundTintMode="screen"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/passwordET"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:backgroundTint="#3F51B5"
+        android:backgroundTintMode="screen"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_lock_icon"
+        app:layout_constraintTop_toBottomOf="@id/emailET"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/repeatPasswordET"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:backgroundTint="#3F51B5"
+        android:backgroundTintMode="screen"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_lock_icon"
+        app:layout_constraintTop_toBottomOf="@id/passwordET"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="291dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F47236"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@id/repeatPasswordET"
+        app:layout_constraintTop_toBottomOf="@id/repeatPasswordET" />
+
+    <TextView
+        android:id="@+id/loginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/registerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordET"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/forgot_password"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTV" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/facebook"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/instagram"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

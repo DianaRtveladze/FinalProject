@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.drtveladze.finalapp.fragments.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.drtveladze.finalapp.fragments.LoginScreen"
+        tools:layout="@layout/fragment_login_screen">
+        <action
+            android:id="@+id/action_loginScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_itemsListScreen"
+            app:destination="@id/itemsListScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.drtveladze.finalapp.fragments.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_reset_password">
+        <action
+            android:id="@+id/action_forgotPassword_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsListScreen"
+        android:name="com.drtveladze.finalapp.fragments.ItemsListScreen"
+        android:label="fragment_items_list_screen"
+        tools:layout="@layout/fragment_items_list_screen" >
+        <action
+            android:id="@+id/action_itemsListScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="com.drtveladze.finalapp.fragments.DetailsScreen"
+        android:label="fragment_details_screen"
+        tools:layout="@layout/fragment_details_screen" >
+        <action
+            android:id="@+id/action_detailsScreen_to_itemsListScreen"
+            app:destination="@id/itemsListScreen" />
+        <argument
+            android:name="shopItem"
+            app:argType="com.drtveladze.finalapp.model.ShopListItem" />
+        <action
+            android:id="@+id/action_detailsScreen_to_payScreen"
+            app:destination="@id/payScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/payScreen"
+        android:name="com.drtveladze.finalapp.fragments.PayScreen"
+        android:label="fragment_pay_screen"
+        tools:layout="@layout/fragment_pay_screen" >
+        <action
+            android:id="@+id/action_payScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+        <argument
+            android:name="shopItem"
+            app:argType="com.drtveladze.finalapp.model.ShopListItem" />
+    </fragment>
+
+</navigation>
